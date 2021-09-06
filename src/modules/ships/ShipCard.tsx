@@ -30,7 +30,7 @@ const ShipCard: React.FC<ShipCardProps> = ({ shipDetail, onSelect }) => {
           <strong>Type: {shipDetail.type}</strong>
         </Paragraph>
         <Paragraph scale={300}>Role: {shipDetail.role}</Paragraph>
-        <Paragraph scale={300}>Value: {new Intl.NumberFormat().format(shipDetail.shipValue)}</Paragraph>
+        <Paragraph scale={300}>Value: {new Intl.NumberFormat().format(shipDetail.value)}</Paragraph>
         <Paragraph scale={300}>Current Dock: {shipDetail.currentStation}</Paragraph>
       </Box>
       {onSelect && (
