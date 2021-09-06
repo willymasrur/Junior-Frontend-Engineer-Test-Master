@@ -35,7 +35,7 @@ const ShipCard: React.FC<ShipCardProps> = ({ shipDetail, onSelect }) => {
       </Box>
       {onSelect && (
         <Box display="flex" justifyContent="flex-end" p="sm">
-          <Button type="button" variant="outline" size={32} onClick={handleSelect}>
+          <Button type="button" variant="outline" size={32} onClick={handleSelect} disabled={true}>
             Select Ship
           </Button>
         </Box>
