@@ -1,15 +1,15 @@
 import { NextApiRequest, NextApiResponse } from 'next';
-import currentShips from 'data/ships';
+// import currentShips from 'data/ships';
 
 const handler = (req: NextApiRequest, res: NextApiResponse) => {
   if (req.query.shipId) {
     const shipId = Array.isArray(req.query.shipId) ? req.query.shipId[0] : req.query.shipId;
 
-    if (data) {
+    if (shipId) {
       res.statusCode = 200;
       res.json({
         status: 'ok',
-        data,
+        shipId,
       });
     } else {
       res.statusCode = 404;
